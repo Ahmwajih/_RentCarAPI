@@ -4,17 +4,18 @@ const app = express();
 require('dotenv').config();
 const port = process.env.PORT || 3000;
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-    }
-);
 
 app.use(require('./middleware/errorHandler'));
 app.use(express.json());
 require('express-async-errors');
 
-const userRouter = require('./routes/users');
-app.use('/', userRouter);
+const mainRouter = require('./routes/index');
+app.use('/', mainRouter);
+
+app.use(require('./middleware/auth'))
+app.use(require('./middleware/errorHandler'));
+app.use(require('./middleware/logger'));
+app.use(require('./middleware/queryHandler'));
 
 
 const dbConnection = require('./configs/dbConnection');

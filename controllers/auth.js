@@ -38,12 +38,13 @@ module.exports = {
     logout: async (req, res) => {
 
     const auth = req.headers.authorization;
-    const token = await Token.findOne ({ token: auth });
-    const result = await Token.deleteOne({ token: auth });
+    const tokenkey = auth ?  auth.split(' ')[1] : null; // get token from header authorization value
+    const result = await Token.deleteOne({ token: tokenkey});
     if (result.deletedCount > 0) {
         return res.status(200).send({
             error: false,
             message: 'Logout successful',
+            result: result,
         });
     } else {
         return res.status(404).send({
