@@ -1,15 +1,17 @@
 const router = require('express').Router();
 
 const userController = require('../controllers/users');
+const { isAdmin, isLogin } = require('../middleware/permission');
+const auth = require('../middleware/auth');
 
 
 router.route('/')
-    .get(userController.list)
-    .post(userController.create);
+    .get(isAdmin, userController.list)
+    .post( userController.create);
 
 router.route('/:id')
-    .get(userController.read)
-    .put(userController.update)
-    .delete(userController.delete);
+    .get(isLogin, userController.read)
+    .put(isAdmin,userController.update)
+    .delete(isAdmin,userController.delete);
 
 module.exports = router;

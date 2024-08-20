@@ -38,7 +38,7 @@ module.exports = {
     logout: async (req, res) => {
 
     const auth = req.headers.authorization;
-    const tokenkey = auth ?  auth.split(' ')[1] : null; // get token from header authorization value
+    const tokenkey = auth ?  auth.split(' ')[1] : null; 
     const result = await Token.deleteOne({ token: tokenkey});
     if (result.deletedCount > 0) {
         return res.status(200).send({

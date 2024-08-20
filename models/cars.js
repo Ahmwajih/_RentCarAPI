@@ -45,3 +45,18 @@ const carSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Cars', carSchema);
+
+
+
+// create schema for cars for postman 
+// {
+//     "plateNumber": "ABC-123",
+//     "brand": "Toyota",
+//     "model": "Corolla",
+//     "year": 2021,
+//     "isAutomatic": true,
+//     "pricePerDay": 1000,
+//     "isPublished": true,
+//     "createdId": "60b5e3d3f4b7c20015e5e3b0",
+//     "updatedId": "60b5e3d3f4b7c20015e5e3b0"
+// }

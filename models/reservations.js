@@ -36,3 +36,14 @@ const reservationSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Reservations', reservationSchema);
+
+
+// create schema for reservations for postman
+// {
+//     "userId": "60b5e3d3f4b7c20015e5e3b0",
+//     "carId": "60b5e3d3f4b7c20015e5e3b0",
+//     "startDate": "2021-06-01",
+//     "endDate": "2021-06-05",
+//     "totalAmount": 4000,
+
+// }
