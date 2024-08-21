@@ -24,7 +24,12 @@ const reservationSchema = new mongoose.Schema({
     },
     totalAmount: {
         type: Number,
-        required: true,
+        default: function() { 
+            return this.carId.pricePerDay * ((this.endDate - this.startDate) / 86400000); // create a function to calculate total amount
+        },
+        transform: function() {
+            return this.totalAmount.toFixed(2); // round the total amount to 2 decimal places
+        }
     },
     isPaid: {
         type: Boolean,
