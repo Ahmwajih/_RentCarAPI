@@ -21,3 +21,6 @@
 ::ffff:127.0.0.1 - - [21/Aug/2024:20:25:22 +0000] "GET /doc/redoc HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0"
 ::ffff:127.0.0.1 - - [21/Aug/2024:20:25:22 +0000] "GET /doc/json HTTP/1.1" 500 122 "http://localhost:8000/doc/redoc" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0"
 ::ffff:127.0.0.1 - - [21/Aug/2024:20:25:44 +0000] "GET /doc/json HTTP/1.1" 500 122 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0"
+::ffff:127.0.0.1 - - [21/Aug/2024:20:26:54 +0000] "GET /doc/redoc HTTP/1.1" 200 671 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0"
+::ffff:127.0.0.1 - - [21/Aug/2024:20:26:54 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8000/doc/redoc" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0"
+::ffff:127.0.0.1 - - [21/Aug/2024:20:26:54 +0000] "GET /doc/json HTTP/1.1" 200 12040 "http://localhost:8000/doc/redoc" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0"
