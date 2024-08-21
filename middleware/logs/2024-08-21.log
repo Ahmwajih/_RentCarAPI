@@ -1,0 +1,8 @@
+::1 - - [21/Aug/2024:14:58:11 +0000] "POST /auth/login HTTP/1.1" 401 55 "-" "PostmanRuntime/7.40.0"
+::1 - - [21/Aug/2024:14:58:19 +0000] "POST /auth/login HTTP/1.1" 401 55 "-" "PostmanRuntime/7.40.0"
+::1 - - [21/Aug/2024:14:58:25 +0000] "POST /auth/login HTTP/1.1" 200 283 "-" "PostmanRuntime/7.40.0"
+::1 - - [21/Aug/2024:14:59:29 +0000] "GET /cars HTTP/1.1" 200 3069 "-" "PostmanRuntime/7.40.0"
+::1 - - [21/Aug/2024:15:00:12 +0000] "POST /reservations HTTP/1.1" 400 144 "-" "PostmanRuntime/7.40.0"
+::1 - - [21/Aug/2024:15:00:32 +0000] "POST /reservations HTTP/1.1" 400 144 "-" "PostmanRuntime/7.40.0"
+::1 - - [21/Aug/2024:15:00:46 +0000] "POST /reservations HTTP/1.1" 500 309 "-" "PostmanRuntime/7.40.0"
+::1 - - [21/Aug/2024:15:02:01 +0000] "POST /reservations HTTP/1.1" 201 393 "-" "PostmanRuntime/7.40.0"
